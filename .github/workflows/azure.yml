@@ -15,10 +15,10 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/OneCloudService/MicrosoftAzureRDP/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/OneCloudService/MicrosoftAzureRDP/main/winrar.exe -OutFile winrar.exe
         Invoke-WebRequest https://raw.githubusercontent.com/OneCloudService/MicrosoftAzureRDP/main/wallpaper.jpeg -OutFile wallpaper.jpeg
-    - name: Extract ngrok Files
+    - name: Extraindo ngrok Arquivos
       run: Expand-Archive ngrok.zip
 
-    - name: Connecting ngrok Account
+    - name: Connectando Conta ngrok 
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
