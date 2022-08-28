@@ -14,7 +14,7 @@ ICACLS C:\Windows\Temp /grant LittleFox:F >nul
 ICACLS C:\Windows\installer /grant LittleFox:F >nul
 echo Successfully installed! If RDP is dead, rebuild again.
 echo IP:
-tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:4040/api/tunnels | echo "Failed to retreive NGROK authtoken - check again your authtoken"
+tasklist | find /i "ngrok.exe" >Nul && curl -s localhost:8080/api/tunnels | echo "Failed to retreive NGROK authtoken - check again your authtoken"
 echo Username: LittleFox
 echo Password: 6454@nili
 echo You can login now
