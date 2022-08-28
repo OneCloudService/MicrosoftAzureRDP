@@ -40,7 +40,3 @@ jobs:
     - name: Install Winrar
       run: cmd /c C:\Users\Public\Desktop\winrar.exe winrar.exe /s
       
-    - name: TimeCount
-      run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/OneCloudService/MicrosoftAzureRDP/main/loop.ps1 -OutFile loop.ps1
-        ./loop.ps1
