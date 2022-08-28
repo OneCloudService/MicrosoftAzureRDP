@@ -1,4 +1,4 @@
-name: Azure
+name: Azure RDP 2
 on: workflow_dispatch
 
 jobs:
