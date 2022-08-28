@@ -1,6 +1,6 @@
-$i = 34567
+$i = 3
 do {
     Write-Host $i
-    Sleep 13478
+    Sleep 30
     $i--
 } while ($i -gt 0)
